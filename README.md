@@ -1,5 +1,14 @@
 # FinalProject
 My project is an E-commerce site in everyone can choose their products and add them to a cart. An user can signup by providing us some details and later they can login-logout by using their credentials.
+# Technologies Used
+- FrontEnd
+  - HTML
+  - CSS
+  - Java Script
+- BackEnd
+  - Node JS
+  - mySQL
+
 I am still working on checkout and purchasing features, which may be available in few weeks. I am providing some of the screen shots of my site.
 # SignUp Page
 ![image](https://user-images.githubusercontent.com/104047900/169444230-6eb4155e-3cf0-4c9b-9449-7d02180b8306.png)
