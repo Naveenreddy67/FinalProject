@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Deals</title>
+</head>
+<body>
+  <div>
+    <ul>
+      <li><a href="home">Home</a></li>
+      <li><a href="cart">cart</a></li>
+    </ul>
+  </div>
+  
+  <section id="price-cards" class="card-container">
+
+    <div class="row">
+      <% data.forEach(function(Product){ %>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card">
+          <img src="<%= Product.img %>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><%= Product.product_name %></h5>
+            <a href="/cart/<%= Product.product_id %>" class="btn btn-light btn-outline-dark btn-sm">Add to Cart</a>
+            <button class="btn card-btn btn-sm">$<%= Product.price %></button>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+
+    </div>
+    <br>
+  </section>
+
+</body>
+</html>
